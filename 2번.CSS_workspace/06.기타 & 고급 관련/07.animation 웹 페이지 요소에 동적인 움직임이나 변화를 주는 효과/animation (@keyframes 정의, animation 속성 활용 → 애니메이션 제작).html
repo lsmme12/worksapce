@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation연습</title>
+  <style>
+    #box1{
+      width: 500px;
+      height: 300px;
+      border: 1px solid black;
+    }
+    .box{
+      width:100px;
+      height:100px;
+      background-color: orange;     
+      /* animation-name: slideRight; 
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; */
+      /* animation:slideRight 2s infinite alternate; /* shorthand 표기 */
+    }
+
+    /* @keyframes slideRight {
+      from{ transform: translateX(0);}
+      to{ transform: translateX(500px);}
+    } */
+    @keyframes slideRight {
+      0%{ transform: translateX(0);}
+      50%{ transform: translateY(500px);}
+      100%{ transform: translateX(500px);}
+    }
+    #box2{
+      width: 100px;
+      height: 100px;
+      margin: 60px auto;
+      background-color: red;
+      animation: rotate 5s infinite, background 5s infinite alternate;
+
+    }
+    @keyframes rotate {
+      0%{transform: perspective(120px) rotateX(0deg) rotateY(0deg);}
+      50%{transform: perspective(120px) rotateX(-180deg) rotateY(0deg);}
+      100%{transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);}
+    }
+    @keyframes background{
+      0%{ background-color: red;}
+      50%{ background-color: green;}
+      100%{ background-color: blue;}
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div id="box1">
+    <div class="box"></div>
+  </div>
+
+
+  <div id="box2">    
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 연습 </title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #header{
+            width: 100%;
+            height: 200px;
+            background-color: black;
+            color: white;
+        }
+        #nav{
+            height: 50px;
+            background-color: gray;
+        }
+        #article{
+            width: 80%;
+            height: 500px;
+            background-color: #eeeeee;
+            float: left;
+        }
+        #aside{
+            width: 20%;
+            height: 500px;
+            background-color: #dddddd;
+            float: left;
+        }
+        #footer{
+            clear: both;
+            height: 100px;
+            background-color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 머리말 ------------------------------------------------------------------------->
+    <div id="header">
+        <h1>글로벌아이티</h1>
+    </div>
+    <!-- /머리말 -->
+
+    <!-- nav ------------------------------------------------------------------------->
+    <div id="nav">교육원 소개 :교육원연혁:과정소개:Contact</div>
+    <!-- /nav -->
+
+    <!-- art ------------------------------------------------------------------------->
+    <div id="article">글로벌아이티 소개</div>
+    <!-- /art -->
+
+    <!-- aside ------------------------------------------------------------------------->
+    <div id="aside">광고</div>
+    <!--/aside -->
+
+    <!-- footer ------------------------------------------------------------------------->
+    <div id="footer">&copy;All rights reserved by 글로벌아이티.</div>
+    <!-- /footer -->
+</body>
+</html>

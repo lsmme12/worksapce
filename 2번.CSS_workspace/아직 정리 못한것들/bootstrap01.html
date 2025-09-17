@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+<!-- bootstrap에서 사용하는 CSS링크  -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- Bootstrap 에서 사용하는 JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>My First Bootstrap Page</h1>
+        <p>This is some text.</p>
+    </div>
+
+    <div class="container">
+        <div class="for">
+            <div class="col-lg-3 col-md-6" style="background: red; height: 300px;">box1</div>
+            <div class="col-lg-3 col-md-6" style="background: green; height: 300px;">box2</div>
+            <div class="col-lg-3 col-md-6" style="background: blue; height: 300px;">box3</div>
+            <div class="col-lg-3 col-md-6" style="background: orange; height: 300px;">box4</div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Lighter, Secondary Text</h1>
+        <p>The small element is used to create a lighter, secondary text in any heading:</p>       
+        <h1>h1 heading <small>secondary text</small></h1>
+        <h2>h2 heading <small>secondary text</small></h2>
+        <h3>h3 heading <small>secondary text</small></h3>
+        <h4>h4 heading <small>secondary text</small></h4>
+        <h5>h5 heading <small>secondary text</small></h5>
+        <h6>h6 heading <small>secondary text</small></h6>
+    <blockquote>
+        <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+        <footer>From WWF's website</footer>
+    </blockquote>
+        <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+
+    <pre>
+                                            Text in a pre element
+                                            is displayed in a fixed-width
+                                            font, and it preserves
+                                            both      spaces and
+                                            line breaks.
+    </pre>
+        <p class="text-muted">This text is muted.</p>
+        <p class="text-primary">This text is important.</p>
+        <p class="text-success">This text indicates success.</p>
+        <p class="text-info">This text represents some information.</p>
+        <p class="text-warning">This text represents a warning.</p>
+        <p class="text-danger">This text represents danger.</p>
+
+    <img class="img-rounded" src="/img/kitten-1.jpg" style="width: 300px;">
+    <img class="img-circle" src="/img/kitten-1.jpg" style="width: 300px;">
+    <img class="img-thumbnail" src="/img/kitten-1.jpg" style="width: 300px;">
+
+    <hr>
+
+    <a href="#" class="btn btn-frimary" role="button">Link Button</a>
+    <button type="button" class="btn btn-info">Button</button>
+    <input type="button" class="btn btn-info" value="Input Button">
+    <input type="submit" class="btn btn-info" value="Submit Button">
+
+    <hr>
+
+
+    <a href="#">News <span class="badge">5</span></a><br>
+
+    <hr>
+
+
+    <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li  class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+    </ul>
+
+    <hr>
+
+    <ul class="list-group">
+        <li class="list-group-item">New <span class="badge">12</span></li>
+        <li class="list-group-item">Deleted <span class="badge">5</span></li>
+        <li class="list-group-item">Warnings <span class="badge">3</span></li>
+    </ul>
+
+    <hr>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel Heading</div>
+        <div class="panel-body">Panel Content</div>
+        <div class="panel-footer">Panel Footer</div>
+    </div>
+
+    <hr>
+
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+    </div>
+
+    </div>
+
+    <hr>
+
+    <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+    <div id="demo" class="collapse">
+        Lorem ipsum dolor text....
+    </div>
+
+    <hr>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p>Some content.</p>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Some content in menu 1.</p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Some content in menu 2.</p>
+        </div>
+
+    <form action="login.jsp" method="post">
+        <input class="form-control" type="text" name="id" placeholder="id"><br>
+        <input class="form-control" type="password" name="pw" placeholder="pw"><br>
+        <input class="btn" type="submit" value="login">
+    </form>
+
+
+</div>
+
+    
+</body>
+</html>

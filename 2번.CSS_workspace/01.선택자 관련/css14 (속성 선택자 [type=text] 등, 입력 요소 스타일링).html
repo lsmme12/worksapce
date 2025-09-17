@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS연습</title>
+  <style>
+    a[href]{
+      background: yellow;
+      border: 1px solid #222;
+      font-weight: normal;
+    }
+    a[target="_blank"]{
+      padding-right: 30px;
+      background: url("images/newwindow.png") no-repeat center right;      
+    }
+    [class~=button]{
+      box-shadow: rgba(0,0,0,0.4) 4px 4px;
+      border-radius: 5px;
+    }
+    a[title|=us]{
+      background: url("images/us.png") no-repeat left center;
+    }
+    a[title|=jap]{
+      background: url("images/jp.png") no-repeat left center;
+    }
+    a[title|=chn]{
+      background: url("images/ch.png") no-repeat left center;
+    }
+
+    #menu a[title^="eng"]{
+      background: url("images/us.png") no-repeat left center;
+      padding: 5px 25px;
+    }
+    #menu a[title^="jap"]{
+      background: url("images/jp.png") no-repeat left center;
+      padding: 5px 25px;
+    }
+    #menu a[title^="chin"]{
+      background: url("images/ch.png") no-repeat left center;
+      padding: 5px 25px;
+    }
+
+    #menu2 a[href$="hwp"]{
+      background: url("img/hwp_icon.gif") center right no-repeat;
+      padding-right: 25px;
+    }
+    #menu2 a[href$="xls"]{
+      background: url("img/excel_icon.gif") center right no-repeat;
+      padding-right: 25px;
+    }
+    #menu3 a[href*="w3"]{
+      background: blue;
+      color: white;
+    }
+
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a>메인메뉴 : </a></li>
+    <li><a href="#">메뉴 1</a></li>
+    <li><a href="#">메뉴 2</a></li>
+    <li><a href="#">메뉴 3</a></li>
+    <li><a href="#">메뉴 4</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="https://www.naver.com" target="_blank">naver</a></li>
+    <li><a href="https://www.google.com">google</a></li>
+    <li><a href="https://www.chatgpt.com">chatgpt</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#" class="flat">메뉴 1</a></li>
+    <li><a href="#" class="flat">메뉴 2</a></li>
+    <li><a href="#" class="button">메뉴 3</a></li>
+    <li><a href="#" class="flat button">메뉴 4</a></li>
+  </ul>
+
+  <ul>
+    <li>외국어 서비스 : </li>
+    <li><a href="#" title="us-nation">영어</a></li>
+    <li><a href="#" title="jap-nation">일본어</a></li>
+    <li><a href="#" title="chn">중국</a></li>
+  </ul>
+
+  <ul id="menu">
+        <li><a>외국어 서비스 :</a></li>
+        <li><a href="#" title="english">영어</a></li>
+        <li><a href="#" title="japanese">일본어</a></li>
+        <li><a href="#" title="3.chinese">중국어</a></li>
+  </ul>
+
+  <ul id="menu2">        
+        <li><a href="intro.hwp">hwp 파일</a></li>
+        <li><a href="into.xls">엑셀 파일</a></li>
+  </ul>
+
+  <ul id="menu3">        
+        <li><a href="https://www.w3.org">w3c</a></li>
+        <li><a href="https://developer.mozilla.org">MDN</a></li>
+  </ul>
+</body>
+</html>

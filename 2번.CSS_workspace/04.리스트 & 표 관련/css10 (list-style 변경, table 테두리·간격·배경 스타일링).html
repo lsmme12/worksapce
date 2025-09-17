@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS연습</title>
+    <style>
+        .book1{list-style-type: none;}
+        .book2{list-style-type: upper-alpha;}
+        
+        table{
+            caption-side: bottom;
+            border: 1px solid black;/* 겉 테두리만 검은색이 됨*/
+            width: 300px;
+            border-collapse: collapse;
+        }
+        /* 표 안 쪽에 점선 같은 게 생김.*/   
+        td,th{
+            border: 1px dotted black;
+            text-align: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>도서 시리즈</h1>
+    <ul class="book1">
+        <li>Do it ! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>된다! 시리즈</li>
+    </ul>
+    <ol class="book2">
+        <li>Do it ! 시리즈</li>
+        <li>첫 코딩 시리즈</li>
+        <li>된다! 시리즈</li>
+    </ol>
+
+    <h2>상품구성</h2>
+    <table>
+        <caption>선물용과 가정용 상품 구성</caption>
+        <thead>
+        <tr>
+            <th>용도</th>
+            <th>중량</th>
+            <th>개수</th>
+            <th>가격</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2">선물용</th>
+                <th>3kg</th>
+                <th>11~16과</th>
+                <th>35,000원</th>
+            </tr>
+            <tr>
+                <th>5kg</th>
+                <th>18~26과</th>
+                <th>52,000원</th>
+            </tr>
+            <tr>
+                <th rowspan="2">가정용</th>
+                <th>3kg</th>
+                <th>11~16과</th>
+                <th>30,000원</th>
+            </tr>
+            <tr>
+                <th>5kg</th>
+                <th>18~26과</th>
+                <th>47,000원</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll animation 연습</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+        document.addEventListener("scroll", function(){
+            console.log(window.scrollY);
+            if(window.scrollY > 1600){
+                document.getElementById("title").classList.add("animate__animated", "animate__fadeInLeft")
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="content1" style="height: 2000px;">
+        <h1>회사소개</h1>
+    </div>
+    <div id="content2" style="height: 500px;">
+        <h1 id="title" style="opacity: 0;">과정소개</h1>
+    </div>
+    <div id="content3" style="height: 500px;">
+        <h1>contact</h1>
+    </div>
+    
+</body>
+</html>

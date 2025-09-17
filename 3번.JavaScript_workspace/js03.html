@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript연습</title>
+  <script>
+    // let userNumber=parseInt(prompt("숫자를 입력하세요"));
+    // if(userNumber%3==0){
+    //   alert("3의 배수입니다."); // true일 때 실행됨.
+    // }else{
+    //   alert("3의 배수가 아닙니다."); // false일 때 실행됨.
+    // }
+
+    // let score=parseInt(prompt("점수를 입력하세요"));
+    // if(score>=90){
+    //   alert("A");
+    // }else if(score>=80){
+    //   alert("B");
+    // }else if(score>=70){
+    //   alert("C");
+    // }else if(score>=60){
+    //   alert("D");
+    // }else{
+    //   alert("F");
+    // }
+
+    // if(10<5) alert("참입니다.");
+    // else alert("거짓입니다.");
+
+    // if(10<5)
+    // alert("참입니다.");
+
+    // let userNumber=parseInt(prompt("숫자를 입력하세요"));
+
+    // //userNumber값이 있으면 ture 없으면 false
+    // if(userNumber){
+    //   //3항연산자
+    //   (parseInt(userNumber%3)==0)?alert("3의 배수입니다."):alert("3의 배수가 아닙니다.");
+    // }else{
+    //   alert("취소되었습니다.");
+    // }
+
+    // let numberOne=parseInt(prompt("50미만인 숫자를 입력하세요"));
+    // let numberTwo=parseInt(prompt("50미만인 숫자를 입력하세요"));
+    // // numberOne이 10보다 작거나 numberTwo가 10보다 작은 경우
+    // if(numberOne<10 || numberTwo<10){
+    //   alert("숫자 2개 중에서 최소한 하나는 10 미만이군요.");
+    // }else{
+    //   alert("숫자 2개 중에서 10미만인 수는 없습니다.");
+    // }
+
+    // let numberOne=parseInt(prompt("50미만인 숫자를 입력하세요"));
+    // let numberTwo=parseInt(prompt("50미만인 숫자를 입력하세요"));
+    // // numberOne이 50보다 작고 numberTwo도 50보다 작은 경우
+    // if(numberOne<50 && numberTwo<50){
+    //   alert("숫자 2개 모두 50 미만이군요.");
+    // }else{
+    //   alert("조건에 맞지 않는 숫자가 있습니다.");
+    // }
+
+    // let numberOne=parseInt(prompt("50미만인 숫자를 입력하세요"));
+    // // 값을 입력안하면 numberOne이 false가 되고, !에 의해서 false가 true로 바뀜.
+    // if(!numberOne){
+    //   alert("취소되었습니다.");
+    // }else if(numberOne<50){
+    //   alert("50미만입니다.");
+    // }else{
+    //   alert("50이상입니다.");
+    // }
+
+    // let session=prompt("관심 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인");
+    // switch(session){
+    //   case "1":
+    //     document.write("<p>마케팅 세션은 201호에서...</p>");
+    //     break;
+    //   case "2":
+    //     document.write("<p>개발 세션은 202호에서...</p>");
+    //     break;
+    //   case "3":
+    //     document.write("<p>디자인 세션은 203호에서...</p>");
+    //     break;
+    //   default:
+    //     alert("잘못된 입력입니다.");   
+    // }
+
+    // let sum=0; // 합계를 저장하는 변수. 처음에는 0.
+    // for(let i=1; i<4; i++){
+    //   sum+=i; // sum=sum+i;
+    // }
+    // document.write(`1부터 3까지의 합은 ${sum}입니다.`);
+
+    // 구구단 
+    // i는 2단~9단, j는 1~9
+    for(let i=2; i<=9; i++){
+      for(let j=1; j<=9; j++){
+        document.write(`${i} x ${j} = ${i*j}<br>`);
+      }
+      document.write("<br>"); // 한단이 끝나면 줄을 바꿈
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

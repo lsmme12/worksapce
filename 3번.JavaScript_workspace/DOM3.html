@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM3연습</title>
+</head>
+<body>
+    <button id="but">추가</button>
+    <button id="but2">삭제</button>
+    <ul id="itemList"></ul>
+    <script>
+        let but=document.getElementById("but"); //버튼id로 찾아오기
+        but.addEventListener("click",function(){
+            let li=document.createElement("li"); //li 생성
+            let textNode=document.createTextNode("javascript"); //text 생성
+            li.appendChild(textNode); //li태그에 text추가
+            let itemList=document.getElementById("itemList"); //ul id로 찾아오기
+            itemList.appendChild(li); //ul태그에 li추가
+        });
+
+
+        let btn2=document.getElementById("but2");
+        btn2.addEventListener("click",function(){
+        let itemList=document.getElementById("itemList"); //ul태그 id로 찾아오기
+        itemList.removeChild(itemList.lastChild); // ul태그의 마지막 자식(li태그) 삭제
+        }); 
+    
+
+
+
+
+    </script>
+    
+</body>
+</html>

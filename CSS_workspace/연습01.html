@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css 연습</title>
+  <style>
+    /* 공통 버튼 스타일 */
+    .btn {
+      border: 1px solid black;
+      background-color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      margin: 5px;
+    }
+
+    
+    .success { border-color: green; color: green;}
+    .info    { border-color: red; color: red; }
+    .warning { border-color: gray; color: black; }
+    
+    .success:hover{ background: green; color: white;}
+    .info:hover{ background:    red; color: white;}
+    .warning:hover{ background: gray;}
+
+  </style>
+</head>
+<body>
+  <h1>Outline Buttons</h1>
+  <a href="https://www.naver.com/" class="btn success">네이버</a>
+  <a href="https://www.google.com/" class="btn info">구글</a>
+  <a href="https://www.chatgpt.com/" class="btn warning">지피티</a>
+</body>
+</html>

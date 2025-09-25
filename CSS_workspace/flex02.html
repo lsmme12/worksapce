@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 연습</title>
+    <style>
+    .container{
+        width: 800px;
+        display: flex;
+        gap: 30px;
+        border: 1px solid black;
+        background-color: #eee;
+        
+    }
+    .box{
+        background-color: black;
+        flex-basis: 150px
+    }
+    p{
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+    }
+    #box1{flex-grow: 1;}
+    #box2{flex-grow: 1;}
+    #box4{flex-grow: 2;}
+
+    #container3 .box{
+        flex-basis: 300px;
+    }
+    #box5{flex-shrink: 1;}
+    #box6{flex-shrink: 0;}
+    #box7{flex-shrink: 1;}
+    #box8{flex-shrink: 2;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>가나다라마바사</p>
+        </div>
+        <div class="box">
+            <p>가나다라마바사아자</p>
+        </div>
+        <div class="box">
+            <p>ABCDRFGH</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="box1">
+            <p>1</p>
+        </div>
+        <div class="box" id="box2">
+            <p>2</p>
+        </div>
+        <div class="box" id="box3">
+            <p>3</p>
+        </div>
+        <div class="box" id="box4">
+            <p>4</p>
+        </div>
+    </div>
+    <div class="container" id="container3">
+        <div class="box" id="box5">
+            <p>1</p>
+        </div>
+        <div class="box" id="box6">
+            <p>2</p>
+        </div>
+        <div class="box" id="box7">
+            <p>3</p>
+        </div>
+        <div class="box" id="box8">
+            <p>4</p>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

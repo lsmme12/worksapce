@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS연습</title>
+  <style>
+    h1{
+      font-size: 100px;
+      /* color: hsl(0,100%,50%); */
+      color: hsl(198,86.8%,47.5%);}
+    .heading{
+        background-color: #222;
+        width: 500px;
+        height: 100px;
+        color: rgb(255, 255, 255);
+        margin: auto;  /* 박스 자체를 가운데 정렬 */
+        text-align: center;  /* 박스안의 글자를 박스를 기준으로 가운데 정렬*/
+        line-height: 100px;  /* 박스안의 글자를 박스를 기준으로 수직가운데 정렬 heigt와 같은 값을 주면됨.*/
+        font-size: 30px;
+        font-weight: 900;}
+    /*글자 그림자 효과 주는것.*/
+    .shadow1{
+        color: red;
+        text-shadow: 1px 1px black;}
+    .shadow2{ 
+        text-shadow: 5px 5px 3px #ffa500;}
+    .shadow3{
+        color: #fff;
+        text-shadow: 7px -7px 20px #000;}
+    /*글자 간격 */
+    .spacing1{
+        letter-spacing: 0.2em;}
+    .spacing2{
+        letter-spacing: 0.5em;}
+
+  </style>
+</head>
+<body>
+  <div class="heading">
+    HTMl
+  </div>
+
+
+
+  <h1>CSS</h1>
+  <p>껍질에 붉은 빛이 들어 <span class="accent">레드향</span>이라 불린다.</p>
+  
+  <h1>Example text-align: justify</h1>
+
+  <p>The text-align: justify; value stretches the lines so that each line has equal width (like in newspapers and magazines).</p>
+
+  <div>
+  In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+  </div>
+<!--텍스트 밑줄.윗줄.취소선 을 나타내는것.-->
+  <p style="text-decoration: none;">none</p>
+  <p style="text-decoration: underline;">underline</p>
+  <p style="text-decoration: overline;"> overline</p>
+  <p style="text-decoration: line-through;"> line-through</p>
+
+  <h1 class="shadow1">HTML</h1>
+  <h1 class="shadow2">CSS</h1>
+  <h1 class="shadow3">자바스크립트</h1>
+
+  <p class="spacing1">CSS</p>
+  <p class="spacing2">CSS</p>
+
+
+
+
+</body>
+</html>

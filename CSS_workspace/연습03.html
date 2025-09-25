@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>이미지 + 덮개 설명(hover)</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { padding: 40px; font-family: system-ui, Apple SD Gothic Neo, sans-serif; }
+
+    /* float 정렬 부모 높이 붕괴 방지 */
+    .row::after { content: ""; display: block; clear: both; }
+
+    /* 카드(부모 박스) */
+    .box{
+      float: left;
+      width: 30%;
+      margin-right: 3.333%;
+      height: 190px;
+      border-radius: 14px;
+      border: 2px solid #d0d7de;
+      overflow: hidden;
+      position: relative;
+
+      /* 중앙 제목 고정 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      color: #fff;                 /* 제목이 사진 위에서도 보이도록 흰색 */
+      text-shadow: 0 1px 6px rgba(0,0,0,.45);
+    }
+    .box:last-child{ margin-right: 0; }
+
+    /* 배경 사진(꽉 채우기) */
+    .thumb{
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;           /* 비율 유지하며 꽉 채움 */
+      z-index: 0;
+      transform: scale(1.02);      /* 미세 확대로 빈틈 방지 */
+    }
+
+    /* 중앙 제목(부모 설명) – hover 때 사라지게 */
+    .title{
+      position: relative;
+      z-index: 1;
+      transition: opacity .35s ease;
+    }
+    .box:hover .title{ opacity: 0; }   /* 요구사항: 덮개 올라올 때 부모 설명 안 보이기 */
+
+    /* 회색 덮개 + 설명 */
+    .gray-box{
+      position: absolute; left: 0; bottom: -100%;
+      width: 100%; height: 100%;
+      background: rgba(40,40,40,.92);  /* 살짝 투명한 딥그레이 */
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      padding: 16px; text-align: center; line-height: 1.5;
+      z-index: 2;                      /* 사진/제목 위로 올라오게 */
+      transition: bottom .6s ease;     /* 부드럽게 위로 슬라이드 */
+    }
+    .box:hover .gray-box{ bottom: 0; }
+
+    /* 덮개 안 텍스트 살짝 등장감 */
+    .desc{
+      opacity: .0; transform: translateY(8px);
+      transition: opacity .35s ease .1s, transform .35s ease .1s;
+      font-size: 14px;
+    }
+    .box:hover .desc{
+      opacity: 1; transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <!-- 일본 -->
+    <div class="box" aria-label="Japan">
+      <img class="thumb" src="/class/img/jp.png" alt="Japan">
+      <div class="gray-box">
+        <p class="desc">
+          일본: 전통과 최첨단이 공존하는 섬나라. 사계절 축제, 정교한 장인정신,
+          대중교통의 정시성과 도시 미학이 특징. (설명은 자유롭게 수정!)
+        </p>
+      </div>
+      <span class="title">JAPAN</span>
+    </div>
+
+    <!-- 미국 -->
+    <div class="box" aria-label="United States">
+      <img class="thumb" src="/class/img/us.png" alt="United States">
+      <div class="gray-box">
+        <p class="desc">
+          미국: 다양한 문화·지형과 거대한 내수시장. 혁신 산업과 대학·연구기관,
+          주별 차이가 뚜렷한 연방제 구조. (원하는 대로 편집 가능)
+        </p>
+      </div>
+      <span class="title">USA</span>
+    </div>
+
+    <!-- 중국 -->
+    <div class="box" aria-label="China">
+      <img class="thumb" src="/class/img/ch.png" alt="China">
+      <div class="gray-box">
+        <p class="desc">
+          중국: 오랜 역사와 광대한 영토. 제조·디지털 경제가 빠르게 성장하며,
+          지역별 음식·방언·문화가 매우 다채롭다. (나중에 수정 OK)
+        </p>
+      </div>
+      <span class="title">CHINA</span>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+

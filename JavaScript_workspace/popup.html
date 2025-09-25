@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팝업연습</title>
+  <script>
+    // window.open("notice.html","","width=500, height=400"); // 팝업창 이름이 없으면, 같은 팝업창 여러개 생성가능
+    //window.open("notice.html","notice","width=500, height=400"); // 팝업창 이름이 있으면, 같은 팝업창 한개만 생성가능
+    //window.open("notice.html","notice","width=500, height=400, left=100, top=100"); // 팝업창 이름이 있으면, 같은 팝업창 한개만 생성가능
+    // let newWin=window.open("notice.html","notice","width=500, height=400, left=100, top=100"); // 팝업창 이름이 있으면, 같은 팝업창 한개만 생성가능
+    // if(newWin==null){
+    //   alert("팝업이 차단되어 있습니다. 브라우저 팝업 차단을 해제해주세요");
+    // }
+
+    // 최신 트렌드는 팝업창을 modal로 만들어 사용, 가급적 window,open()사용하지 않는 것이 좋음//
+
+    // doc : 팝업창에 띄울 문서 url
+    // win : 팝업창 이름
+    // width : 팝업창 너비
+    // height : 팝업창 높이 
+    function openCenter(doc,win,width,height){
+      let left=(screen.width/2)-(width/2);
+      let top=(screen.height/2)-(height/2);
+      let newWin=window.open(doc,win,"width="+width+",height="+height+",left="+left+",top="+top);
+      if(newWin==null){
+        alert("팝업이 차단되어 있습니다. 브라우저 팝업 차단을 해제해주세요");
+      }
+    }
+    openCenter("notice.html","notice",500,400);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Unit Tests for JavaScript Basics</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.20.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.20.0.js"></script>
+  <script src="js02-testable.js"></script>
+
+  <script>
+    QUnit.module('JavaScript Basics Tests');
+
+    QUnit.test('Dynamic Typing', function(assert) {
+      assert.strictEqual(getDynamicTypingExample(), true, 'A variable can be reassigned to different types, ending with a boolean `true`.');
+    });
+
+    QUnit.test('String Examples', function(assert) {
+      const result = getStringExamples();
+      assert.strictEqual(result.singleInDouble, "I'm studying javascript", 'Handles single quotes within double quotes.');
+      assert.strictEqual(result.escapedSingle, "I'm studying javascript", 'Handles escaped single quotes.');
+      assert.strictEqual(result.concatenation, "Kim is in class 204", 'Concatenates strings and numbers correctly.');
+      assert.strictEqual(result.templateLiteral, "Kim is in class 204", 'Uses template literals correctly.');
+    });
+
+    QUnit.test('Array Example', function(assert) {
+      assert.strictEqual(getArrayExample(), undefined, 'Assigning an undefined variable to an array reference makes it undefined.');
+    });
+
+    QUnit.test('Type Conversion', function(assert) {
+      const result = getTypeConversionExamples();
+      assert.strictEqual(result.stringPlusNumber, '2010', 'Number is coerced to string for `+` operation.');
+      assert.strictEqual(result.booleanOf0, false, 'Boolean(0) is falsy.');
+      assert.strictEqual(result.booleanOfEmptyString, false, "Boolean('') is falsy.");
+      assert.strictEqual(result.booleanOfNull, false, 'Boolean(null) is falsy.');
+      assert.strictEqual(result.booleanOfUndefined, false, 'Boolean(undefined) is falsy.');
+      assert.strictEqual(result.booleanOfFalseString, true, "Boolean('false') is truthy.");
+      assert.strictEqual(result.stringToNumber, 30, "Number('10') correctly converts string to number for addition.");
+    });
+
+    QUnit.test('Arithmetic Operators', function(assert) {
+      const result = getArithmeticExamples();
+      assert.strictEqual(result.add, 30, '10 + 20 = 30');
+      assert.strictEqual(result.subtract, -10, '10 - 20 = -10');
+      assert.strictEqual(result.multiply, 200, '10 * 20 = 200');
+      assert.strictEqual(result.divide, 0.5, '10 / 20 = 0.5');
+      assert.strictEqual(result.floatDivide, 7.5, '15 / 2 = 7.5');
+      assert.strictEqual(result.modulo, 1, '15 % 2 = 1');
+    });
+
+    QUnit.test('Increment/Decrement Operators', function(assert) {
+      const result = getIncrementDecrementExamples();
+      assert.strictEqual(result.x_before, 10, 'Post-increment (x++) returns the original value.');
+      assert.strictEqual(result.x_after, 11, 'Post-increment (x++) increments the value.');
+      assert.strictEqual(result.y_before, 11, 'Pre-increment (++y) returns the new value.');
+      assert.strictEqual(result.y_after, 11, 'Pre-increment (++y) increments the value.');
+    });
+
+    QUnit.test('Assignment Operators', function(assert) {
+      assert.strictEqual(getAssignmentExamples(), 10, 'Modulo assignment (10 %= 20) results in 10.');
+    });
+
+    QUnit.test('Comparison Operators', function(assert) {
+      const result = getComparisonExamples();
+      assert.strictEqual(result.looseEquality, true, 'Loose equality (10 == "10") is true.');
+      assert.strictEqual(result.strictEquality, false, 'Strict equality (10 === "10") is false.');
+      assert.strictEqual(result.looseInequality, false, 'Loose inequality (10 != "10") is false.');
+      assert.strictEqual(result.strictInequality, true, 'Strict inequality (10 !== "10") is true.');
+    });
+  </script>
+</body>
+</html>

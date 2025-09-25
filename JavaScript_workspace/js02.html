@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript연습</title>
+  <script>
+    // JavaScript is a dynamically typed language.
+    // A variable can hold values of different types.
+    let a; // 'a' is declared but not initialized, so it is 'undefined'.
+    console.log(a); // Prints: undefined
+    a=10; // Now 'a' is a number.
+    a="hello"; // Now 'a' is a string.
+    a=true; // Now 'a' is a boolean.
+    console.log(a); // Prints: true
+
+    // Using single quotes inside double quotes is fine.
+    let doing="I'm studying javascript";
+    console.log(doing); // "I'm studying javascript"
+
+    // To use single quotes inside single quotes, you must escape them.
+    let doing2='I\'m studying javascript';
+    console.log(doing2); // "I'm studying javascript"
+
+    // The backslash in "I\'m" is not necessary when using double quotes.
+    let doing3="I'm studying javascript";
+    console.log(doing3); // "I'm studying javascript"
+
+    // String concatenation and template literals (ES6+)
+    let name="Kim";
+    let classRoom=204;
+    console.log(name+" is in class "+classRoom); // Old way: Kim is in class 204
+    console.log(`${name} is in class ${classRoom}`); // Modern way (Template Literal): Kim is in class 204
+
+    // 배열 (Array). The variable name is a reference to the array object.
+    let season=["봄","여름","가을","겨울"];
+    console.log(season[0]); // 봄
+    console.log(season[1]); // 여름
+    console.log(season[2]); // 가을
+    console.log(season[3]); // 겨울
+
+    let b;  // 'b' is undefined.
+    console.log(b); // undefined
+    season=b; // Now 'season' is also undefined. It no longer references the array.
+    console.log(season); // undefined
+    // console.log(season[0]); // This would cause a TypeError, as you can't get a property of 'undefined'.
+
+    // The 'prompt' function is commented out because it blocks script execution until the user responds.
+    // It always returns a string.
+    // let input=prompt("숫자를 입력하세요"); // e.g., if you type 10, 'input' becomes the string "10".
+    // console.log(input*10); // JavaScript automatically converts the string "10" to a number for the multiplication. Result: 100.
+
+    // With the '+' operator, if one operand is a string, the other is converted to a string for concatenation.
+    console.log('20'+10); // 10 becomes '10', so '20' + '10' = '2010'.
+
+    // Explicit Type Conversion (Casting)
+    // Falsy values in JavaScript:
+    console.log(Boolean(0)); // false
+    console.log(Boolean('')); // false
+    console.log(Boolean("")); // false
+    console.log(Boolean(null)); // false
+    console.log(Boolean(undefined)); // false
+    console.log(Boolean('false'));// true (any non-empty string is true)
+    console.log(Number('10')+20); // Explicitly convert '10' to a number. Result: 30
+
+    // Arithmetic Operators
+    console.log(10+20);
+    console.log(10-20);
+    console.log(10*20); // Multiplication
+    console.log(10/20); // Division
+    console.log(15/2); // Division
+    console.log(15%2); // Modulo (remainder)
+
+    // Unlike integer division in some other languages (like Java), JavaScript division results in a float.
+    let numberOne=15/2; // 자바는 7
+    console.log(numberOne); // 7.5
+
+    // Increment/Decrement Operators
+    let x=10;
+    let y=10;
+    console.log(x++); // Post-increment: uses the value (10), then increments x.
+    console.log(x); // x is now 11.
+    console.log(++y); // Pre-increment: increments y, then uses the new value (11).
+    console.log(y); // y is 11.
+
+    // Assignment Operators
+    let m=10;
+    let n=20;
+    // m+=n;  // m+n을 먼저 계산한 후 m에 저장.
+    // console.log(m); // 30
+    // m-=n;
+    // console.log(m); // -10
+    // m*=n;
+    // console.log(m); // 200
+    // m/=n;
+    // console.log(m); // 0.5
+    m%=n; // m = m % n; m = 10 % 20; m = 10
+    console.log(m); // 10. The assignment expression (m%=n) itself also returns the new value.
+
+    // Comparison Operators
+    console.log(10>20); // false
+    console.log(10<20); // true
+    console.log(10>=20); // false
+    console.log(20<=20); // true
+    console.log(10==20); // false
+    console.log(10!=20); // true
+
+    // Strict vs. Loose Equality
+    console.log(10 == "10"); // true. Loose equality: converts types before comparing values.
+    console.log(10 === "10"); // false. Strict equality: checks if both value and type are the same.
+    console.log(10 != "10"); // false. Loose inequality.
+    console.log(10 !== "10"); // true. Strict inequality. It's best practice to use strict equality (=== and !==).
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반복문연습</title>
+  <script>
+    for(let i=0; i<3; i++){
+      console.log(i);
+    }
+
+    console.log("------------------------");
+
+    let j=0;
+    while(j<3){
+      console.log(j);
+      j++;
+    }
+
+    console.log("------------------------");
+
+    let k=0;
+    do{
+      console.log(k);
+      k++;
+    }while(k<3);
+
+    console.log("------------------------");
+
+    for(let i=0; i<3; i++){
+      if(i==1){
+        break; // for문 종료.
+      }
+      console.log(i);
+    }
+
+    console.log("------------------------");
+
+
+    for(let i=0; i<3; i++){
+      if(i==1){
+        continue; // continue 아래쪽 코드 skip하고, i++로 이동.
+      }
+      console.log(i);
+    }
+
+    console.log("------------------------");
+
+    let a=0;
+    while(a<3){
+      if(a==1){
+        break; // while문 종료.
+      }
+      console.log(a);
+      a++;
+    }
+
+    console.log("------------------------");
+
+    // let b=0;
+    // while(b<3){
+    //   if(b==1){
+    //     continue; // continue 아래코드 skip하고, b<3로 이동. b++를 실행하지 않으므로 무한루프. 
+    //   }
+    //   console.log(b);
+    //   b++;
+    // }
+
+    let b=0;
+    while(b<3){
+      b++;
+      if(b==1){
+        continue; // continue 아래코드 skip하고, b<3로 이동.
+      }
+      console.log(b);
+    }
+    
+    console.log("------------------------");
+
+    let c=0;
+    do{
+      if(c==1){
+        break; // do while문 종료.
+      }
+      console.log(c);
+      c++;
+    }while(c<3);
+
+    console.log("------------------------");
+
+    let d=0;
+    do{
+      d++;
+      if(d==1){
+        continue; // continue 아래코드 skip하고, d<3로 이동.
+      }
+      console.log(d);
+     
+    }while(d<3);
+
+
+    console.log("------------------------");
+
+    //무한루프활용기법
+    // for(;;){
+    //   let score=parseInt(prompt("점수를 입력하세요. (0~100). 중지할 때는 -1을 입력하세요."));
+    //   //탈출조건. score==-1.
+    //   if(score==-1){
+    //     break;
+    //   }
+    //   console.log(score);
+
+    // }
+
+    console.log("------------------------");
+
+    // while(true){
+    //   let names=prompt("이름을 입력하세요. 중지할 때는 'exit'를 입력하세요.");
+    //   //탈출조건. names=='exit'.
+    //   if(names=='exit'){
+    //     break;
+    //   }
+    //   console.log(names);
+    // }
+
+    console.log("------------------");
+    let name;
+    do{
+      name=prompt("이름을 입력하세요. 중지할 때는 'exit'를 입력하세요.");
+      if(name=='exit'){
+        continue;
+      }    
+      console.log(name);
+
+    }while(name!=='exit');
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체</title>
+    <script>
+        //객체생성
+        // let person = {}; //빈 객체
+
+        // { 속성명:값, 속성명:값, ...}
+
+        let student={
+            name:"홍길동",
+            age:"20",
+            subject:["컴퓨터공학과","심리학과"]
+        };
+        console.log(student.name);
+        console.log(student.age);
+        for(let i=0;i<student.subject.length;i++){
+            console.log(student.subject[i]);
+        }
+
+        let student2={
+            name:"이순신",
+            age:"25",
+            subject:["소프트웨어공학과"]
+        };
+
+        let engineering=[student,student2];
+        for(let i=0;i<engineering.length;i++){
+            console.log(engineering[i].name);
+            console.log(engineering[i].age);
+            for(let j=0;j<engineering[i].subject.length;j++){
+                console.log(engineering[i].subject[j]);
+            }
+        }
+        //배열안에 직접 객체 정의
+        let books=[
+            {name:"javascript개론",author:"홍길동",price:25000},
+            {name:"AI개론",author:"이순신",price:30000},
+
+        ];
+        for(let i=0;i<books.length;i++){
+            console.log(books[i].name);
+            console.log(books[i].author);
+            console.log(books[i].price);
+        };
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

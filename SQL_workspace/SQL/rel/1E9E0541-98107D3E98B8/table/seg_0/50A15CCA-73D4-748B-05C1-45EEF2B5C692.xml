@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50A15CCA-73D4-748B-05C1-45EEF2B5C692" schemaObject="3DF60769-E2B7-9663-18C5-6E2C6DBAE8FC" name="PRODUCT">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>USER10</sourceObjSchema>
+<sourceObjName>PRODUCT</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCT_ID" id="425BF9C1-F6EB-6459-8602-361B070963B8">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>PRODUCT_ID</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="F638E8E1-F3B5-F1F3-E413-BBA520488046">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="911D6DA3-46F1-9CED-40A3-FFE29D5DC536">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="7A96C058-2952-FCB5-AB0C-D2EE71967E9E">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>PRICE</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK" id="F95DF6C6-0BE5-B894-2D73-B1C98F646AF1">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>STOCK</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_AT" id="C4C3B7F2-4B6A-29A3-09EF-DF23DA08A83B">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>CREATED_AT</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A6363B9-C90A-5895-93F5-C681A1A38B4A" schemaObject="3DF60769-E2B7-9663-18C5-6E2C6DBAE8FC" name="PRODUCT_PK">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>USER10</sourceObjSchema>
+<sourceObjName>SYS_C008355</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:44 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="425BF9C1-F6EB-6459-8602-361B070963B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

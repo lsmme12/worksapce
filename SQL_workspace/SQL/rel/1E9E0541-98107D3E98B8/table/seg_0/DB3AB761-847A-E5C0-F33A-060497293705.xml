@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB3AB761-847A-E5C0-F33A-060497293705" schemaObject="3DF60769-E2B7-9663-18C5-6E2C6DBAE8FC" name="CART">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>USER10</sourceObjSchema>
+<sourceObjName>CART</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CART_ID" id="BA911648-D382-DF79-E29E-361C653AFAC6">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>CART_ID</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEMBER_ID" id="71490F9B-B31A-E6B7-A305-11A6A725BAD3">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>MEMBER_ID</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A56A09B-B6CB-DD4A-43E0-3C94CA3F2C13" referredColumn="36F47FC5-25E6-35E8-5DBF-B7B6BBA91593"/>
+</associations>
+</Column>
+<Column name="PRODUCT_ID" id="C8244E13-F33A-2ABF-E5FF-149ABD51D66B">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>PRODUCT_ID</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AEE57096-CB83-8527-517E-E1963E3E1311" referredColumn="425BF9C1-F6EB-6459-8602-361B070963B8"/>
+</associations>
+</Column>
+<Column name="QUANTITY" id="A56D5454-7739-379F-F7EB-33A71DBFE09A">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>QUANTITY</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDED_AT" id="2086EEC3-FD2D-68C2-1A5D-19A17131E8A4">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>CART</sourceObjSchema>
+<sourceObjName>ADDED_AT</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89D67384-7BA1-C6B7-E91E-A1C5F0C65714" schemaObject="3DF60769-E2B7-9663-18C5-6E2C6DBAE8FC" name="CART_PK">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>USER10</sourceObjSchema>
+<sourceObjName>SYS_C008358</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:40 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA911648-D382-DF79-E29E-361C653AFAC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BB08B4A-2154-ABBE-DC38-D3D65589175E" name="FK_CART_MEMBER">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:45 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71490F9B-B31A-E6B7-A305-11A6A725BAD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BF677C9-DEDE-4DE4-6A42-20F44ED1AFA1" name="FK_CART_PRODUCT">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:45 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8244E13-F33A-2ABF-E5FF-149ABD51D66B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

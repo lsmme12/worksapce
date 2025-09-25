@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97B96B68-B435-ABD7-C53C-BB18BD50CD2E" name="cart">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 02:57:52 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cno" id="481DA1B4-7E53-D0FA-9694-F8C85CAF6054">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 02:59:01 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id" id="4A76E2D4-5A26-9D3B-2A26-A02C96FABBE3">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 03:05:25 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FA46229-2097-1756-2CDD-FCD2719D0350" referredColumn="B70EA06E-9729-2234-0CA2-E9558D51B8C5"/>
+</associations>
+</Column>
+<Column name="gcode" id="1190D7A9-6DE6-1BF2-7536-57D92F329C6D">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 03:08:32 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="191D6A81-E8B3-A8E1-1D09-47B46E796755" referredColumn="68AB7A70-8BD8-25A3-A667-120995A57CF9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="83E7699A-DB72-3E53-4DA8-F9A22BF078DD" name="cart_PK">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 02:59:08 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="481DA1B4-7E53-D0FA-9694-F8C85CAF6054"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76179A9D-7117-4AFA-B27E-896A179E6074" name="cart_member_FK">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 03:05:25 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A76E2D4-5A26-9D3B-2A26-A02C96FABBE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="138636D5-B7B8-F03E-E0B7-40F218891EC6" name="cart_goods_FK">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 03:09:38 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1190D7A9-6DE6-1BF2-7536-57D92F329C6D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

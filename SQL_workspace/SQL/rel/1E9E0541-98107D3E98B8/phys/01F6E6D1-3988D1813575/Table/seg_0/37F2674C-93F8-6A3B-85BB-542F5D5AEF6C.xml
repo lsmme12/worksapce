@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DEPARTMENT" directorySegmentName="seg_0" id="37F2674C-93F8-6A3B-85BB-542F5D5AEF6C">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<schemaObject>3DF60769-E2B7-9663-18C5-6E2C6DBAE8FC</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>FB8CAFFE-BC5E-78D2-0777-04598A17B61F</segment>
+<tableSpace>19605B4E-D87C-09C5-0BBF-C67044A48BEA</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DEPTNO" id="902D3496-9CA7-C43C-D742-6DA5666C359F">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPTNAME" id="97AEF0BB-2D02-CE29-2597-11ECFD3CF141">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FLOOR" id="BD2A1493-8A48-0622-51FC-6CF57D309BB3">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPARTMENT_PK" id="15141F85-CB61-523C-7110-6C264C227DA3">
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:44 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<schemaObject>3DF60769-E2B7-9663-18C5-6E2C6DBAE8FC</schemaObject>
+<segment>F51403DF-CD4B-703A-62B8-C9D9786C48B9</segment>
+<tableSpace>19605B4E-D87C-09C5-0BBF-C67044A48BEA</tableSpace>
+<indexSegment>F51403DF-CD4B-703A-62B8-C9D9786C48B9</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

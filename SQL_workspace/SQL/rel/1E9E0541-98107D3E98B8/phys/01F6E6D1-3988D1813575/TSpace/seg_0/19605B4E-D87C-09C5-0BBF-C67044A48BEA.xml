@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="MYTS" directorySegmentName="seg_0" id="19605B4E-D87C-09C5-0BBF-C67044A48BEA">
+<sourceConnName>localhost_user10</sourceConnName>
+<sourceObjSchema>USER10</sourceObjSchema>
+<sourceObjName>MYTS</sourceObjName>
+<createdBy>14C</createdBy>
+<createdTime>2025-09-19 04:38:36 UTC</createdTime>
+<ownerDesignName>SQL</ownerDesignName>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+</TableSpaceOraclev10g>

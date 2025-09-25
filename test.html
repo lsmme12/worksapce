@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼을 누르면 JavaScript 글자 없어지게 하기.</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <button id="btn1">btn1</button>
+        <h1 id="title">JavaScript</h1>
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const proceedButton = document.getElementById("btn1");
+            const title = document.getElementById("title");
+            proceedButton.addEventListener("click", function () {
+                title.classList.toggle("hidden"); 
+          });  
+        });
+    </script>
+    
+
+    
+</body>
+</html>

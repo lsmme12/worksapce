@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id 바로전 div요소를 색깔을 빨간색으로 만들기.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div>div 요소</div>
+        <div>div 요소</div>
+        <div>div 요소</div>
+        <div id="base">div 요소</div>
+        <div>div 요소</div>
+        <div>div 요소</div>
+        <div>div 요소</div>
+    </div>
+    <script>
+        $(function(){
+            $("#base").prev().css("color","red");
+        });
+    </script>
+</body>
+</html>

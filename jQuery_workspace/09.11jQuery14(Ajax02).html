@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery연습</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $.ajax({
+                    url:"https://www.data.go.kr/catalog/15029361/fileData.json",  //서버주소
+                    dataType:"json",     //서버에서 전달되는 data를 json으로 처리
+                    success:function(data){  //서버에서 응답이 성공적으로 왓을 때 실행되는 함수. 서베에서 전달된 데이터는 data에 저장됨.
+                        console.log(data);
+                        console.log(data.name);
+                        console.log(data.description);
+
+                        $("#div1").text()
+                    }   
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">버튼1</button>
+    <div id="div1"></div>
+
+    
+</body>
+</html>

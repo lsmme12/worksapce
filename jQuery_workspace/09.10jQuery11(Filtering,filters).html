@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery연습</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //p태그에 .intro가 설정된 것만 찾아서 적용.
+            $("p").filter(".intro").css("background-color", "yellow");
+            //p태그에 .intro가 설정되지 않은 것만 찾아서 적용.
+            $("p").not(".intro").css("background-color", "orange");
+            //p태그를 찾아서 p태그를 순서대로 하니씩 사용해서 익명함수에 loop를 돌면서 처리.
+            $("p").filter(function(){
+                console.log($(this).text().indexOf("Mickey"));
+            });
+        });
+</script>
+</head>
+<body>
+    <h1>Welcome to My Homepage</h1>
+    <p>My name is Donald.</p>
+    <p class="intro">I live in Duckburg.</p>
+    <p class="intro">I love Duckburg.</p>
+    <p>My best friend is Mickey.</p>    
+    <div class="intro">test</div>
+</body>
+</html>

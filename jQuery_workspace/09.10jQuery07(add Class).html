@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery연습</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .title{
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("button").eq(0).click(function(){
+                $("h1").addClass('title')
+            });
+            $("button").eq(1).click(function(){
+                $("h1").removeClass('title')
+            });
+            $("button").eq(2).click(function(){
+                $("h1").toggleClass('title')
+            });
+
+            $("div").hover(function(){
+                $("h1").addClass("title");},
+            function(){
+                $("h1").removeClass("title");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>addClass()</button>
+    <button>removeClass()</button>
+    <button>toggleClass()</button>
+    <div>
+    <h1>jquery</h1>
+    </div>
+</body>
+</html>

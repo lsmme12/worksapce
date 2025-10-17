@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSP 연동 Form 연습</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <form action="text01.jsp" method="get">
+  
+    <label for="fname">성</label>
+    <input type="text" id="fname" name="firstname" placeholder="성 입력하세요.">
+
+    <label for="lname">이름</label>
+    <input type="text" id="lname" name="lastname" placeholder="이름 입력하세요.">
+
+    <label for="country">지역</label>
+    <select id="country" name="country">
+        <option value="한국">한국</option>
+        <option value="유럽">유럽</option>
+        <option value="마귝">미국</option>
+    </select>
+
+    <label for="subject">내용</label>
+    <textarea id="subject" name="subject" placeholder="내용을 입력하세요." style="height:200px"></textarea>
+
+    <input type="submit" value="보내기">
+  </form>
+</div>
+
+</body>
+</html>
